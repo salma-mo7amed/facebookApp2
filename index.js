@@ -7,7 +7,7 @@ import commentRouter from './src/modules/comment/comment.router.js';
 
 // create server:
 const app = express();
-const port = 3000
+const port = process.env.PORT || 3000
 // db connection
 
  sequelize.sync();
